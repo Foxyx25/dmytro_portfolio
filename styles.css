@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    /* font-family: "Comfortaa", sans-serif;*/
+    margin: 0;
+} 
+section {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+#main {
+    background-image: url(img/bgMAIN.png);
+}
+#about {
+    background-image: url(img/bgABOUT.png);
+}
+#skills {
+    background-image: url(img/bgSKILLS.png);
+}
+#works {
+    background-image: url(img/bgWORKS.png);
+}
+#comments {
+    background-image: url(img/bgCOMMENTS.png);
+}
+
+.main_block, .about_block, .skills_block, .works_block, .comments_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.main_block {
+    flex-direction: column;
+    height: 100vh;
+}
+.main_content {
+    width: 850px;
+    height: 225px;
+    background: url(img/form1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.main_title {
+    color: #2b2d35;
+    font-size: 65px;
+    padding-top: 60px;
+}
+.main_subtitle {
+    color: #2b2d35;
+    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+    padding-top: 10px;
+}
+.button {
+    width: 200px;
+    height: 60px;
+    border-radius: 100px;
+    border: #2b2d35 solid 2px;
+    background-color: #BBFF2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: black 5px 5px;
+    transition: all 0.5s;
+}
+.button:hover {
+    transform: scale(1.1);
+}
+.button a {
+    font-size: 20px;
+    text-decoration: none;
+}
