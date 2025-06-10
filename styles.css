@@ -79,3 +79,48 @@ section {
     font-size: 20px;
     text-decoration: none;
 }
+.moving_planet {
+    background: url(img/moving-planet.png);
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    animation-name: moving_planet;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes moving_planet {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-153px);
+    }
+}
+.title {
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-size: 65px;
+    text-shadow: 5px 5px black;
+}
+.about_text {
+    height: 270px;
+    width: 30%;
+    background-color: #792aff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+.about_text p {
+    max-width: 95%;
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Comfortaa", sans-serif;
+}
