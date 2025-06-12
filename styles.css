@@ -124,3 +124,70 @@ section {
     font-weight: 700;
     font-family: "Comfortaa", sans-serif;
 }
+.about_card {
+    width: 376px;
+    height: 346px;
+    background-image: url(img/form2.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about_card p {
+    width: 336px;
+    margin-top: 5px;
+    text-align: left;
+}
+.skils-card {
+    background-image: url(img/form3.png);
+    width: 638px;
+    height: 401px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.skils-card img{
+    padding: 20px;
+}
+.skils-card p {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+.moving_planet2 {
+    background: url(img/moving-planet2.png);
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation-name: moving_planet;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.works_block img{
+    width: 31%;
+}
+.works_block {
+    display: flex;
+    justify-content: space-around;
+}
+.comments_block {
+    justify-content: space-evenly;
+}
+.comment-card {
+    background-image: url(img/card.png);
+    width: 200px;
+    height: 300px;
+    /* background-repeat: no-repeat; */
+}
+.comment {
+    background-image: url(img/comment.png);
+    width: 327px;
+    height: 160px;
+    /* background-repeat: no-repeat; */
+}
