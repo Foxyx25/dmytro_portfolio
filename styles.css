@@ -255,3 +255,28 @@ nav {
 .active {
     background-color: #BBFF2C;
 }
+footer {
+  background-color: #220046; /* тёмно-фиолетовый фон */
+  color: white;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footer-text p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #ccc;
+}
