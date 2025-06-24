@@ -281,6 +281,18 @@ footer {
   color: #ccc;
 }
 
+.mobile-button {
+    display: none;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+}
+
+.hide {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     .nav-links {
         display: none;
@@ -288,6 +300,7 @@ footer {
 
     .logo {
         font-size: 40px;
+        padding-left: 10px;
     }
 
     .main_content {
@@ -317,7 +330,76 @@ footer {
     .about_card {
         order: -1;
     }
+    .about_text {
+        width: 80%;
+    }
     .title {
         padding-top: 0px;
+    }
+    .skils-card {
+        width: 350px;
+        height: 380px;
+        background-size: cover;
+        border-radius: 10px;
+    }
+    .skils-card p {
+        font-size: 16px;
+    }
+    .skils-card img {
+        padding: 10px;
+        width: 80px;
+    }
+    .works_block {
+        flex-direction: column;
+    }
+    .works_block img {
+        width: 70%;
+        margin-bottom: 15px;
+    }
+    .comments_block {
+        flex-direction: column;
+    }
+    .comment {
+        background-image: url(img/comment-mobile.png);
+        height: auto;
+        padding: 10px 0;
+        background-size: cover;
+        margin: 15px 0;
+    }
+    .footer-text h3 {
+        font-size: 16px;
+    }
+    .footer-text p {
+        font-size: 12px;
+    }
+    .mobile-button {
+        display: block;
+    }
+    .mobile-menu {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        background-color:#200153;
+        height: 100vh;
+    }
+    .mobile-nav {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-nav-links .nav-link {
+        margin-bottom: 30px;
+    }
+    .fixed-menu {
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .hide {
+        display: none;
     }
 }

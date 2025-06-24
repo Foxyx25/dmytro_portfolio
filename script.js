@@ -4,9 +4,16 @@ menu.addEventListener("click", function(event) {
     let clickTarget = event.target;
     let activeBtn = document.querySelector(".active")
 
+    console.log(clickTarget)
     if (clickTarget.classList.contains("nav-link")) {
         activeBtn.classList.remove("active");
         clickTarget.classList.add("active")
+
+        console.log(clickTarget)
+        let mobile = document.querySelector(".mobile-menu");
+        if (!mobile.classList.contains("hide")){
+            mobile.classList.add("hide");
+        }
     }
 })
 let classLink = ".main-link";
@@ -36,3 +43,6 @@ window.onscroll = function() {
         activeBtn.classList.remove("active")
     }
 }
+document.querySelector(".mobile-button").addEventListener("click", function(event) {
+    document.querySelector(".mobile-menu").classList.toggle("hide");
+});
