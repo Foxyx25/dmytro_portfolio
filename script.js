@@ -15,6 +15,15 @@ menu.addEventListener("click", function(event) {
             mobile.classList.add("hide");
         }
     }
+
+    let body = document.querySelector("body");
+    let mobileMenu = document.querySelector(".mobile-menu");
+    if (!body.classList.contains("off-scroll") && !mobileMenu.classList.contains("hide")){
+        body.classList.add("off-scroll");
+    }
+    else{
+        body.classList.remove("off-scroll");
+    }
 })
 let classLink = ".main-link";
 
